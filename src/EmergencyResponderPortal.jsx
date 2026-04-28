@@ -5,11 +5,18 @@ import {
   exportIncidentsCsv,
   normalizeLoginIdentifier,
   visibleIncidents,
-} from "./src/portal/helpers";
-import { ConfirmDialog, Notice } from "./lib/api";
-import { Header, LoginScreen, Sidebar } from "./lib/api";
+} from "./portal/helpers";
+import { ConfirmDialog, Notice } from "./portal/shared";
+import { Header, LoginScreen, Sidebar } from "./portal/layout";
 import {
   AccountPage,
+  DashboardPage,
+  IncidentsPage,
+  NewIncidentPage,
+  ReportsPage,
+  SecurityPage,
+  UsersPage,
+} from "./portal/pages";
   DashboardPage,
   IncidentsPage,
   NewIncidentPage,
