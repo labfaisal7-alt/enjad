@@ -1,13 +1,16 @@
 import { useEffect, useMemo, useState } from "react";
 import { api, TOKEN_STORAGE_KEY } from "./lib/api";
+
 import {
   canAccess,
   exportIncidentsCsv,
   normalizeLoginIdentifier,
   visibleIncidents,
 } from "./portal/helpers";
+
 import { ConfirmDialog, Notice } from "./portal/shared";
 import { Header, LoginScreen, Sidebar } from "./portal/layout";
+
 import {
   AccountPage,
   DashboardPage,
@@ -17,13 +20,6 @@ import {
   SecurityPage,
   UsersPage,
 } from "./portal/pages";
-  DashboardPage,
-  IncidentsPage,
-  NewIncidentPage,
-  ReportsPage,
-  SecurityPage,
-  UsersPage,
-} from "./src/portal/pages";
 
 export default function EmergencyResponderPortal() {
   const [users, setUsers] = useState([]);
