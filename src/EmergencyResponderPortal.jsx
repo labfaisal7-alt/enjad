@@ -1,13 +1,13 @@
 import { useEffect, useMemo, useState } from "react";
-import { api, TOKEN_STORAGE_KEY } from "./src/lib/api";
+import { api, TOKEN_STORAGE_KEY } from "./lib/api";
 import {
   canAccess,
   exportIncidentsCsv,
   normalizeLoginIdentifier,
   visibleIncidents,
 } from "./src/portal/helpers";
-import { ConfirmDialog, Notice } from "./src/portal/shared";
-import { Header, LoginScreen, Sidebar } from "./src/portal/layout";
+import { ConfirmDialog, Notice } from "./lib/api";
+import { Header, LoginScreen, Sidebar } from "./lib/api";
 import {
   AccountPage,
   DashboardPage,
